@@ -1,0 +1,17 @@
+spring:
+datasource:
+url: jdbc:postgresql://localhost:5432/portfolio
+username: portfolio
+password: portfolio
+jpa:
+hibernate:
+ddl-auto: update # dev only; later use migrations (Flyway)
+properties:
+hibernate:
+format_sql: true
+jdbc.time_zone: UTC
+jackson:
+serialization:
+write-dates-as-timestamps: false
+server:
+port: 8080
